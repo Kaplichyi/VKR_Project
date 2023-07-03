@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+		id="WebApp_ID" version="4.0">
+  <display-name>FQW_Project</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  
+  
+  <servlet>
+      <servlet-name>AuthorServlet</servlet-name>
+      <servlet-class>servlets.author_page</servlet-class>
+   </servlet>
+    
+  <servlet-mapping>
+    <servlet-name>AuthorServlet</servlet-name>
+    <url-pattern>/author</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+      <servlet-name>HomeServlet</servlet-name>
+      <servlet-class>servlets.IndexServlet</servlet-class>
+   </servlet>
+    
+  <servlet-mapping>
+    <servlet-name>HomeServlet</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+      <servlet-name>SigninServlet</servlet-name>
+      <servlet-class>servlets.signin_page</servlet-class>
+   </servlet>
+    
+  <servlet-mapping>
+    <servlet-name>SigninServlet</servlet-name>
+    <url-pattern>/signin</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+      <servlet-name>SignUpServlet</servlet-name>
+      <servlet-class>servlets.signup_page</servlet-class>
+   </servlet>
+    
+  <servlet-mapping>
+    <servlet-name>SignUpServlet</servlet-name>
+    <url-pattern>/signup</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+      <servlet-name>AuthorsServlet</servlet-name>
+      <servlet-class>servlets.authors_list_page</servlet-class>
+   </servlet>
+    
+  <servlet-mapping>
+    <servlet-name>AuthorsServlet</servlet-name>
+    <url-pattern>/authors</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+      <servlet-name>AccountServlet</servlet-name>
+      <servlet-class>servlets.account_page</servlet-class>
+   </servlet>
+    
+  <servlet-mapping>
+    <servlet-name>AccountServlet</servlet-name>
+    <url-pattern>/account</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+      <servlet-name>LogOutServlet</servlet-name>
+      <servlet-class>servlets.logoutServlet</servlet-class>
+   </servlet>
+    
+  <servlet-mapping>
+    <servlet-name>LogOutServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+      <servlet-name>MyAuthorPage</servlet-name>
+      <servlet-class>servlets.my_author_page</servlet-class>
+   </servlet>
+    
+  <servlet-mapping>
+    <servlet-name>MyAuthorPage</servlet-name>
+    <url-pattern>/my_author_page</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+      <servlet-name>MySubTypes</servlet-name>
+      <servlet-class>servlets.subtypes_page</servlet-class>
+   </servlet>
+    
+  <servlet-mapping>
+    <servlet-name>MySubTypes</servlet-name>
+    <url-pattern>/my_subtypes</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+      <servlet-name>NewSub</servlet-name>
+      <servlet-class>servlets.subscribeServlet</servlet-class>
+   </servlet>
+    
+  <servlet-mapping>
+    <servlet-name>NewSub</servlet-name>
+    <url-pattern>/subscription</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+      <servlet-name>CheckPost</servlet-name>
+      <servlet-class>servlets.post_page</servlet-class>
+   </servlet>
+    
+  <servlet-mapping>
+    <servlet-name>CheckPost</servlet-name>
+    <url-pattern>/post</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+      <servlet-name>LikePost</servlet-name>
+      <servlet-class>servlets.likepostServlet</servlet-class>
+   </servlet>
+    
+  <servlet-mapping>
+    <servlet-name>LikePost</servlet-name>
+    <url-pattern>/like</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+      <servlet-name>NewPost</servlet-name>
+      <servlet-class>servlets.newpost_page</servlet-class>
+   </servlet>
+    
+  <servlet-mapping>
+    <servlet-name>NewPost</servlet-name>
+    <url-pattern>/newpost</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+      <servlet-name>AdminAccess</servlet-name>
+      <servlet-class>servlets.admin_page</servlet-class>
+   </servlet>
+    
+  <servlet-mapping>
+    <servlet-name>AdminAccess</servlet-name>
+    <url-pattern>/admin</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
